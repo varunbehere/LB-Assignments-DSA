@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int RangeCheck (int iNo){
+int MultiplyDigits (int iNo){
   int iDigit = 0,iCount = 0, iMul = 1;
 
   while (iNo != 0){
@@ -8,7 +8,7 @@ int RangeCheck (int iNo){
     iMul *= iDigit;
     iNo /= 10;
   }
-  return iCount;
+  return iMul;
 }
 
 int main (){
